@@ -1,6 +1,6 @@
 function Bgchanger() {
     if (this.scrollY > this.innerHeight/.5) {
-        document.getElementById("t").style.backgroundColor = "#FFC700";
+        document.getElementById("t").style.backgroundColor = "#97ff00";
     }
     else{
         document.getElementById("t").style.backgroundColor = "white";

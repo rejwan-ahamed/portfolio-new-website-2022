@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /css/
+Allow: /fonts/
+Allow: /frontend
+Allow: /img
+Allow: /js
+Allow: /404.html
+Allow: /index.html
+Allow: /index.txt
+Allow: /sitemap.xml
