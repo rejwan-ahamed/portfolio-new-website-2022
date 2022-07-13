@@ -1,0 +1,121 @@
+section.mobile-nav {
+  position: absolute;
+  top: 0;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 0px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #97FF00;
+  display: block;
+  font-family: 'neue-b';
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mobile-nav-main {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.mobile-nav {
+  position: fixed;
+  width: 100%;
+}
+
+/* icon animation */
+.fa-42-group {
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  z-index: 55;
+}
+
+#mobile-nav{
+  transition: .6s;
+}
+
+
+.fa-42-group.down {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #97FF00;
+}
+.fa-42-group.down2 {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  color: #000000;
+}
+
+/* my csutom code here for nav animation */
+.sidenav.mySidenav-full{
+  width: 100%;
+}
+
+.mb-social-icons {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+}
+
+.mb-icons {
+  padding: 2rem .5rem;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-main {
+    display: none;
+  }
+}

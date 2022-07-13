@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    position: 0;
+}
+
+@font-face {
+    font-family: neue-ul;
+    src: url(../fonts/NeueMachina-Ultralight.ttf);
+}
+
+@font-face {
+    font-family: neue-l;
+    src: url(../fonts/NeueMachina-Light.ttf);
+}
+
+@font-face {
+    font-family: neue-r;
+    src: url(../fonts/NeueMachina-Regular.ttf);
+}
+
+@font-face {
+    font-family: neue-m;
+    src: url(../fonts//NeueMachina-Medium.ttf);
+}
+
+@font-face {
+    font-family: neue-b;
+    src: url(../fonts/NeueMachina-Bold.ttf);
+}
+
+@font-face {
+    font-family: neue-bb;
+    src: url(../fonts/NeueMachina-Black.ttf);
+}
+
+@font-face {
+    font-family: neue-ub;
+    src: url(../fonts//NeueMachina-Ultrabold.ttf);
+}
+
+
+/* root styling for js */
+#t{
+    transition: .9s;
+    background-color: white;
+}
+#gitcount{
+   transition: all .6s;
+}
+
+
+
+/* for small mobile */
+@media (min-width: 200px) and (max-width: 350px) {
+
+    /* hero section mobile start here */
+    .hero-main-m {
+        width: 100%;
+        height: inherit;
+    }
+
+    .hero-main-m-left {
+        width: 100%;
+        height: 10rem;
+
+    }
+
+    .avater-m {
+        background-image: url(/images/bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .avater-m img {
+        margin-top: 4rem;
+        width: 20rem;
+        height: inherit;
+    }
+
+    .hero-main-m-right {
+        width: 100%;
+        height: max-content;
+        background-color: rgb(255, 255, 255) !important;
+        margin-top: 14rem;
+        padding: 4rem 0rem;
+
+    }
+
+    .hero-main-m-right h1 {
+        font-family: 'neue-b';
+        width: 100%;
+        font-size: 25px;
+        line-height: 35px;
+        padding-left: 2rem;
+    }
+
+    .hero-main-m-right p {
+        font-family: 'neue-m';
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: rgb(33, 33, 33);
+        padding-left: 2rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hero-email-m {
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .hero-email-m a {
+        background-color: black;
+        color: #97FF00;
+        width: 100%;
+        height: inherit;
+        padding: 0.8rem 0.8rem;
+        border-radius: 43px;
+        text-decoration: none;
+        font-family: 'neue-m';
+        font-size: 15px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        transition: .5s;
+    }
+
+    .hero-email-m a:hover {
+        color: black;
+        background-color: #97FF00;
+
+    }
+
+    /* about section start here */
+    .about-m {
+        background-color: black !important;
+        padding: 4rem 2rem;
+        color: #97FF00;
+        transition: .6s;
+    }
+
+    .about-m h3 {
+        font-family: 'neue-m';
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* timeline section start here */
+    .timeline-m {
+        padding: 4rem 2rem;
+        background-color: #FFC700;
+        color: black;
+    }
+
+    h3.timeline-title-m {
+        font-family: 'neue-b';
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .timeline-number-m {
+        font-family: 'neue-m';
+        font-size: 35px;
+        line-height: 38px;
+        margin-top: 4rem;
+        margin-bottom: .5rem;
+    }
+
+    .name-m {
+        font-family: 'neue-m';
+        font-size: 20px;
+    }
+
+    .details-m {
+        font-family: 'neue-m';
+        font-size: 16px;
+    }
+
+    /* project section start here */
+    .project-m {
+        background-color: black;
+        width: 100%;
+        height: inherit;
+        padding: 4rem 0;
+        padding-left: 2rem;
+    }
+
+    .project-main-title-m {
+        font-family: 'neue-m';
+        color: #97FF00;
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+
+    .project-body-m {
+        width: 80vw;
+        height: inherit;
+    }
+
+    .project-img-m img {
+        width: 80vw;
+        height: 16rem;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .project-details-m {
+        background-color: #F4F7FA;
+        width: 100%;
+        height: inherit;
+        padding: 1rem .8rem;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .project-date-m {
+        color: black;
+        font-family: 'neue-r';
+        font-size: 15px;
+    }
+
+    .project-details-m {
+        color: black;
+        font-family: 'neue-m';
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .project-live-m {
+        background-color: #97FF00;
+        border: 1px solid black;
+        border-radius: 50px;
+        font-family: 'neue-m';
+        text-decoration: none;
+        text-align: center;
+        padding: .1rem 1rem;
+        color: black;
+        font-size: 16px;
+        transition: .5s;
+    }
+
+    .project-live-m:hover {
+        background-color: transparent !important;
+        color: black;
+    }
+
+
+
+    /* github */
+
+    .git-title {
+        background-color: #FC5101;
+        color: black;
+        padding: 1.5rem 0rem;
+        text-align: center;
+    }
+
+    .git-title h3 {
+        text-align: center;
+        font-family: 'neue-b';
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .git-count {
+        background-color: #97FF00;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .git-count h3 {
+        color: black;
+        font-family: 'neue-b';
+        font-size: 85px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* for medium size fones */
+@media (min-width: 351px) and (max-width: 400px) {
+
+    /* hero section mobile start here */
+    .hero-main-m {
+        width: 100%;
+        height: inherit;
+    }
+
+    .hero-main-m-left {
+        width: 100%;
+        height: 10rem;
+
+    }
+
+    .avater-m {
+        background-image: url(/images/bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .avater-m img {
+        margin-top: 4rem;
+        width: 20rem;
+        height: inherit;
+    }
+
+    .hero-main-m-right {
+        width: 100%;
+        height: max-content;
+        background-color: rgb(255, 255, 255) !important;
+        margin-top: 14rem;
+        padding: 4rem 0rem;
+
+    }
+
+    .hero-main-m-right h1 {
+        font-family: 'neue-b';
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        padding-left: 2rem;
+    }
+
+    .hero-main-m-right p {
+        font-family: 'neue-m';
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: rgb(33, 33, 33);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .hero-email-m {
+        padding: 0 2rem;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .hero-email-m a {
+        background-color: black;
+        color: #97FF00;
+        width: 100%;
+        height: inherit;
+        padding: 1rem 0.8rem;
+        border-radius: 43px;
+        text-decoration: none;
+        font-family: 'neue-m';
+        font-size: 15px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        transition: .5s;
+    }
+
+    .hero-email-m a:hover {
+        color: black;
+        background-color: #97FF00;
+
+    }
+
+    /* about section start here */
+    .about-m {
+        background-color: black !important;
+        padding: 4rem 2rem;
+        color: #97FF00;
+        transition: .6s;
+    }
+
+    .about-m h3 {
+        font-family: 'neue-m';
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* timeline section start here */
+    .timeline-m {
+        padding: 4rem 2rem;
+        background-color: #FFC700;
+        color: black;
+    }
+
+    h3.timeline-title-m {
+        font-family: 'neue-b';
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .timeline-number-m {
+        font-family: 'neue-m';
+        font-size: 35px;
+        line-height: 38px;
+        margin-top: 4rem;
+        margin-bottom: .5rem;
+    }
+
+    .name-m {
+        font-family: 'neue-m';
+        font-size: 20px;
+    }
+
+    .details-m {
+        font-family: 'neue-m';
+        font-size: 16px;
+    }
+
+    /* project section start here */
+    .project-m {
+        background-color: black;
+        width: 100%;
+        height: inherit;
+        padding: 4rem 0;
+        padding-left: 2rem;
+    }
+
+    .project-main-title-m {
+        font-family: 'neue-m';
+        color: #97FF00;
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .project-body-m {
+        width: 80vw;
+        height: inherit;
+    }
+
+    .project-img-m img {
+        width: 80vw;
+        height: 18rem;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .project-details-m {
+        background-color: #F4F7FA;
+        width: 100%;
+        height: inherit;
+        padding: 1rem .8rem;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .project-date-m {
+        color: black;
+        font-family: 'neue-r';
+        font-size: 15px;
+    }
+
+    .project-details-m {
+        color: black;
+        font-family: 'neue-m';
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .project-live-m {
+        background-color: #97FF00;
+        border: 1px solid black;
+        border-radius: 50px;
+        font-family: 'neue-m';
+        text-decoration: none;
+        text-align: center;
+        padding: .1rem 1rem;
+        color: black;
+        font-size: 16px;
+        transition: .5s;
+    }
+
+    .project-live-m:hover {
+        background-color: transparent !important;
+        color: black;
+    }
+
+
+
+    /* github */
+
+    .git-title {
+        background-color: #FC5101;
+        color: black;
+        padding: 1.5rem 0rem;
+        text-align: center;
+    }
+
+    .git-title h3 {
+        text-align: center;
+        font-family: 'neue-b';
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .git-count {
+        background-color: #97FF00;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .git-count h3 {
+        color: black;
+        font-family: 'neue-b';
+        font-size: 85px;
+        text-align: center;
+    }
+
+
+}
+
+/* for lerge phones */
+@media (min-width: 401px) and (max-width: 500px) {
+
+    /* hero section mobile start here */
+    .hero-main-m {
+        width: 100%;
+        height: inherit;
+    }
+
+    .hero-main-m-left {
+        width: 100%;
+        height: 14rem;
+
+    }
+
+    .avater-m {
+        background-image: url(/images/bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .avater-m img {
+        margin-top: 4rem;
+        width: 24rem;
+        height: inherit;
+    }
+
+    .hero-main-m-right {
+        width: 100%;
+        height: max-content;
+        background-color: rgb(255, 255, 255) !important;
+        margin-top: 14rem;
+        padding: 4rem 0rem;
+
+    }
+
+    .hero-main-m-right h1 {
+        font-family: 'neue-b';
+        width: 100%;
+        font-size: 35px;
+        line-height: 40px;
+        padding-left: 2rem;
+    }
+
+    .hero-main-m-right p {
+        font-family: 'neue-m';
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+        color: rgb(33, 33, 33);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .hero-email-m {
+        padding: 0 2rem;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .hero-email-m a {
+        background-color: black;
+        color: #97FF00;
+        width: 100%;
+        height: inherit;
+        padding: 1rem 0.8rem;
+        border-radius: 43px;
+        text-decoration: none;
+        font-family: 'neue-m';
+        font-size: 18px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        transition: .5s;
+    }
+
+    .hero-email-m a:hover {
+        color: black;
+        background-color: #97FF00;
+
+    }
+
+    /* about section start here */
+    .about-m {
+        background-color: black !important;
+        padding: 4rem 2rem;
+        color: #97FF00;
+        transition: .6s;
+    }
+
+    .about-m h3 {
+        font-family: 'neue-m';
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* timeline section start here */
+    .timeline-m {
+        padding: 4rem 2rem;
+        background-color: #FFC700;
+        color: black;
+    }
+
+    h3.timeline-title-m {
+        font-family: 'neue-b';
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .timeline-number-m {
+        font-family: 'neue-m';
+        font-size: 35px;
+        line-height: 38px;
+        margin-top: 4rem;
+        margin-bottom: .5rem;
+    }
+
+    .name-m {
+        font-family: 'neue-m';
+        font-size: 20px;
+    }
+
+    .details-m {
+        font-family: 'neue-m';
+        font-size: 16px;
+    }
+
+    /* project section start here */
+    .project-m {
+        background-color: black;
+        width: 100%;
+        height: inherit;
+        padding: 6rem 0;
+        padding-left: 2rem;
+    }
+
+    .project-main-title-m {
+        font-family: 'neue-m';
+        color: #97FF00;
+        font-size: 32px;
+        margin-bottom: 2rem;
+        line-height: 42px;
+        width: 80%;
+    }
+
+    .project-body-m {
+        width: 80vw;
+        height: inherit;
+    }
+
+    .project-img-m img {
+        width: 80vw;
+        height: 20rem;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .project-details-m {
+        background-color: #F4F7FA;
+        width: 100%;
+        height: inherit;
+        padding: 1rem .8rem;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .project-date-m {
+        color: black;
+        font-family: 'neue-r';
+        font-size: 15px;
+    }
+
+    .project-details-m {
+        color: black;
+        font-family: 'neue-m';
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .project-live-m {
+        background-color: #97FF00;
+        border: 1px solid black;
+        border-radius: 50px;
+        font-family: 'neue-m';
+        text-decoration: none;
+        text-align: center;
+        padding: .1rem 1rem;
+        color: black;
+        font-size: 16px;
+        transition: .5s;
+    }
+
+    .project-live-m:hover {
+        background-color: transparent !important;
+        color: black;
+    }
+
+
+
+    /* github */
+
+    .git-title {
+        background-color: #FC5101;
+        color: black;
+        padding: 1.5rem 0rem;
+        text-align: center;
+    }
+
+    .git-title h3 {
+        text-align: center;
+        font-family: 'neue-b';
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .git-count {
+        background-color: #97FF00;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .git-count h3 {
+        color: black;
+        font-family: 'neue-b';
+        font-size: 85px;
+        text-align: center;
+    }
+
+
+}

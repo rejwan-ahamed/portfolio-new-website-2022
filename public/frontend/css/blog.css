@@ -1,0 +1,156 @@
+@font-face {
+    font-family: neue-ul;
+    src: url(../fonts/NeueMachina-Ultralight.ttf);
+}
+
+@font-face {
+    font-family: neue-l;
+    src: url(../fonts/NeueMachina-Light.ttf);
+}
+
+@font-face {
+    font-family: neue-r;
+    src: url(../fonts/NeueMachina-Regular.ttf);
+}
+
+@font-face {
+    font-family: neue-m;
+    src: url(../fonts//NeueMachina-Medium.ttf);
+}
+
+@font-face {
+    font-family: neue-b;
+    src: url(../fonts/NeueMachina-Bold.ttf);
+}
+
+@font-face {
+    font-family: neue-bb;
+    src: url(../fonts/NeueMachina-Black.ttf);
+}
+
+@font-face {
+    font-family: neue-ub;
+    src: url(../fonts//NeueMachina-Ultrabold.ttf);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif !important;
+    font-weight: 500;
+}
+
+
+/* fixed attributes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satoshi', sans-serif !important;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-family: 'Satoshi', sans-serif !important;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+a{
+    color:#115bf8;
+    font-size: 20px;
+}
+
+span{
+    font-size: 20px;
+}
+
+img {
+    width: 60%;
+    height: inherit;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.blog-header-section {
+    width: 100%;
+    height: inherit;
+    background-color: #115bf8;
+}
+
+.blog-header-main {
+    padding: 14rem 20rem;
+}
+
+.blog-tag {
+    font-family: 'neue-m';
+    color: white;
+    font-size: 20px;
+}
+
+.blog-date {
+    font-family: 'neue-m';
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10rem;
+}
+
+.blog-title-main {
+    font-family: 'Satoshi', sans-serif !important;
+    font-weight: 600;
+    color: white;
+    font-size: 50px;
+    line-height: 70px;
+    width: 70%;
+    padding: 1rem 0;
+}
+
+.blog-thumbnail {
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-main-thumb {
+    margin-top: -16%;
+    padding-bottom: 6rem;
+}
+
+
+.blog-main-thumb img {
+    width: 80vw;
+    height: 60vh;
+    border-radius: 4px;
+
+}
+
+.main-post-content {
+    padding: 0rem 18rem 6rem 18rem;
+}
+
+
+
+
+
