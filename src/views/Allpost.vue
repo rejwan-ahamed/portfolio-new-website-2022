@@ -1,9 +1,20 @@
 <template>
+
     <!-- all post section start here -->
     <div class="allpost">
         <div class="allpost-main">
 
-            <div v-for="item in results" :key="item.id">
+            <!-- search section start from here -->
+            <div class="serch">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control" id="username" placeholder="Search" required=""
+                        v-model="search">
+                </div>
+            </div>
+            <!-- search section end from here -->
+
+            <div v-for="item in filterBlogs" :key="item.id">
                 <div class="post">
                     <div class="post-img">
                         <router-link :to="'/post/' + item._id" class="post-bg">
@@ -41,24 +52,11 @@ export default {
 
     data() {
         return {
-            results: ''
+            results: [],
+            search: '',
+            select: '',
         }
     },
-
-    // created() {
-    //     document.getElementById("facebook").style.color = "black";
-    //     document.getElementById("instragram").style.color = "black";
-    //     document.getElementById("linked").style.color = "black";
-    //     document.getElementById("git").style.color = "black";
-    //     document.getElementById("test1").style.color = "black";
-    //     document.getElementById("test2").style.color = "black";
-    //     document.getElementById("test3").style.color = "black";
-    //     document.getElementById("test4").style.color = "black";
-    //     document.getElementById("test5").style.color = "black";
-    //     document.getElementById("manue").style.color = "black";
-    //     document.getElementById("deslogo").src = "https://firebasestorage.googleapis.com/v0/b/udoylab3.appspot.com/o/udoylab%20b.svg?alt=media&token=6bdc3ba0-639d-4932-8828-6d394ae4a16b";
-    //     document.getElementById("moblogo").src = "https://firebasestorage.googleapis.com/v0/b/udoylab3.appspot.com/o/udoylab%20b.svg?alt=media&token=6bdc3ba0-639d-4932-8828-6d394ae4a16b";
-    // },
 
     async mounted() {
         window.scrollTo(0, 0)
@@ -68,10 +66,99 @@ export default {
         // console.log(this.results)
     },
 
+    computed: {
+        filterBlogs: function () {
+            return this.results.filter((item) => {
+                return item.title.toLowerCase().match(this.search.toLowerCase());
+            });
+        },
+    },
+
 }
 </script>
 
 <style>
+/* serch section styling start here */
+.serch {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    margin-bottom: 3rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+}
+
+.serch-feild {
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    /* border: 1px solid #c1c1c1; */
+    border: 1px solid #2196f347;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 4rem;
+}
+
+span.input-group-text {
+    border: none !important;
+    border-right: 1px solid black !important;
+}
+
+input:focus {
+    outline: none !important;
+    border: none !important;
+    border-color: red !important;
+}
+
+input {
+    outline: none !important;
+    border: none !important;
+    border-color: red !important;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #97FF00;
+    border: 1px solid black;
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.input-group.has-validation {
+    border: 1px solid black;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    color: black;
+}
+
+input#username {
+    height: 2.5rem;
+}
+
+
 /* responsiveness start here */
-@media (min-width: 768px) and (max-width: 1199.98px) {}
+/* @media (min-width: 768px) and (max-width: 1199.98px) {} */
 </style>
