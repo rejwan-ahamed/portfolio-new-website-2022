@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="hero-main-m-right">
-                <h1>Hi ! There I am rejwan, want to see something mind-blowing.</h1>
+                <h1>Hi ! There I am Rejwan Ahamed, want to see something mind-blowing.</h1>
                 <p>It’s my portfolio. Here I share about my programming journey. I post what l learn, problem-solving &
                     code documentation. </p>
                 <!-- email part stert here -->
@@ -141,7 +141,8 @@
                             <div class="project-details-m">
                                 <div class="project-date-m">09.04.2021</div>
                                 <div class="project-name-m exp-b">Access Network</div>
-                                <a href="https://accessnet-9ccb4.web.app/" target="_blank" class="project-live-m"> Live View </a>
+                                <a href="https://accessnet-9ccb4.web.app/" target="_blank" class="project-live-m"> Live
+                                    View </a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +156,8 @@
                             <div class="project-details-m">
                                 <div class="project-date-m">20.05.2021</div>
                                 <div class="project-name-m exp-b">Paradoxzzy</div>
-                                <a href="https://paradoxzzy.web.app/" target="_blank" class="project-live-m"> Live View </a>
+                                <a href="https://paradoxzzy.web.app/" target="_blank" class="project-live-m"> Live View
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +171,8 @@
                             <div class="project-details-m">
                                 <div class="project-date-m">25.05.2021</div>
                                 <div class="project-name-m exp-b">SB Network</div>
-                                <a href="https://sb-wifi-a7ce0.web.app/" target="_blank" class="project-live-m"> Live View </a>
+                                <a href="https://sb-wifi-a7ce0.web.app/" target="_blank" class="project-live-m"> Live
+                                    View </a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +200,8 @@
                             <div class="project-details-m">
                                 <div class="project-date-m">29.06.2022</div>
                                 <div class="project-name-m exp-b">Udoy Lab</div>
-                                <a href="https://udoylab3.web.app/" target="_blank" class="project-live-m"> Live View </a>
+                                <a href="https://udoylab3.web.app/" target="_blank" class="project-live-m"> Live View
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +215,8 @@
                             <div class="project-details-m">
                                 <div class="project-date-m">05.07.2022</div>
                                 <div class="project-name-m exp-b">Bangla Network</div>
-                                <a href="https://banglawifinetwork.web.app/" target="_blank" class="project-live-m"> Live View </a>
+                                <a href="https://banglawifinetwork.web.app/" target="_blank" class="project-live-m">
+                                    Live View </a>
                             </div>
                         </div>
                     </div>
@@ -224,9 +229,6 @@
         </div>
     </section>
     <!-- project section end here -->
-
-
-
 
 
     <!-- git hub view -->
@@ -245,10 +247,55 @@
     </section>
 
 
+    
+    <!-- service section start here -->
+    <section class="service">
+        <div class="service-main m-service">
+            <div class="service-title">
+                <h3>I am currently working on.</h3>
+            </div>
+            <div class="service-paragraph">
+                <p>Here are some of the technology I am constantly working on and pushing my limits for developing the
+                    best projects to contribute to.</p>
+            </div>
+            <div class="services-main">
+                <div class="service-icons">
+                    <div class="service-main-icon"><img src="/img/server.4c9e961b.svg" alt="" srcset="">
+                        <h4>Backend <br> development</h4>
+                    </div>
+                </div>
+                <div class="service-icons">
+                    <div class="service-main-icon"><img src="/img/layout1.6b5f3c01.svg" alt="" srcset="">
+                        <h4>Single <br> page app</h4>
+                    </div>
+                </div>
+                <div class="service-icons">
+                    <div class="service-main-icon"><img src="/img/back.bf7ae837.svg" alt="" srcset="">
+                        <h4>Cross <br> platfrom </h4>
+                    </div>
+                </div>
+                <div class="service-icons">
+                    <div class="service-main-icon"><img src="/img/arrow.4ebc861c.svg" alt="" srcset="">
+                        <h4>Responsiveness <br> &amp; UI fixing</h4>
+                    </div>
+                </div>
+                <div class="service-icons">
+                    <div class="service-main-icon"><img src="/img/cms.15abbbfd.svg" alt="" srcset="">
+                        <h4>CMS</h4>
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section end here -->
+
+
     <!-- blog section start here -->
     <div class="blog-m">
         <h3 class="project-main-title-m blog-t">My latest blogs</h3>
-        <div class="project-main-paragraph-m blog-t">I tried to post new blogs every single week. Usually, I post blogs on newly learned codes, Project briefings, and my personal code documentation. </div>
+        <div class="project-main-paragraph-m blog-t">I tried to post new blogs every single week. Usually, I post blogs
+            on newly learned codes, Project briefings, and my personal code documentation. </div>
         <div class="blogs-main-m">
             <blogs></blogs>
         </div>
@@ -302,11 +349,29 @@ export default {
             window.location = "https://rejwanahamed.xyz/";
         }
 
+        document.getElementById('mobile-n').style.display = "block";
+        document.getElementById('mfooter').style.display = "block";
+
     }
 };
 </script>
 
 <style>
+@media (min-width:100px) and (max-width: 600px) {
+
+    .service-main-icon img {
+        width: 2.5 !important;
+    }
+
+    .service-main.m-service {
+        padding-bottom: 0px;
+    }
+
+    .swiper.swiper-initialized.swiper-horizontal.mySwiper.swiper-backface-hidden {
+        padding-left: 2rem !important;
+    }
+}
+
 .swiper.swiper-initialized.swiper-horizontal.mySwiper.swiper-backface-hidden {
     padding-left: 2rem;
 }
@@ -328,5 +393,33 @@ marquee {
     color: black;
     padding: 1rem 0rem !important;
     text-align: center;
+}
+
+@media (min-width: 100px) and (max-width: 300px) {
+
+    i.fa-solid.fa-paper-plane {
+        font-size: 16px;
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+
+    i.fa-solid.fa-paper-plane {
+        font-size: 16px;
+        padding-top: 0px;
+        padding-left: 0px;
+
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+
+    i.fa-solid.fa-paper-plane {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-left: 0px;
+
+    }
 }
 </style>

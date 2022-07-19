@@ -1,0 +1,189 @@
+@font-face {
+    font-family: neue-ul;
+    src: url(../fonts/NeueMachina-Ultralight.ttf);
+}
+
+@font-face {
+    font-family: neue-l;
+    src: url(../fonts/NeueMachina-Light.ttf);
+}
+
+@font-face {
+    font-family: neue-r;
+    src: url(../fonts/NeueMachina-Regular.ttf);
+}
+
+@font-face {
+    font-family: neue-m;
+    src: url(../fonts//NeueMachina-Medium.ttf);
+}
+
+@font-face {
+    font-family: neue-b;
+    src: url(../fonts/NeueMachina-Bold.ttf);
+}
+
+@font-face {
+    font-family: neue-bb;
+    src: url(../fonts/NeueMachina-Black.ttf);
+}
+
+@font-face {
+    font-family: neue-ub;
+    src: url(../fonts//NeueMachina-Ultrabold.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button.form-sub-button {
+    background-color: transparent;
+    border: none;
+}
+
+html,
+body {
+    background-color: black;
+    color: #97FF00 !important;
+}
+
+.back {
+    padding: 4rem;
+}
+
+i.fa-solid.fa-arrow-left {
+    color: #97FF00 !important;
+}
+
+.contact {
+    padding: 4rem 8rem 8rem 8rem;
+}
+
+.inp-label {
+    color: #97FF00;
+    font-size: 20px;
+    font-family: 'neue-r';
+}
+
+.name-c {
+    /* margin-top: 1rem; */
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.name-c p {
+    color: #97FF00;
+    font-size: 25px;
+    font-family: 'Switzer', sans-serif;
+
+}
+
+input {
+    color: #97FF00;
+    font-size: 20px;
+    font-family: 'neue-r';
+    border: none !important;
+    margin-left: .5rem;
+    background-color: transparent !important;
+    width: 100%;
+    outline: none !important;
+    height: 35px;
+    caret-shape: block !important; 
+}
+input:focus-visible {
+    border: 0px solid red !important;
+
+}
+textarea {
+    color: #97FF00;
+    font-size: 20px;
+    font-family: 'neue-r';
+    border: none !important;
+    margin-left: .5rem;
+    background-color: transparent !important;
+    width: 100%;
+    outline: none !important;
+    caret-shape: block !important;
+    height: 40px;
+}
+textarea:focus-visible {
+    border: 0px solid red !important;
+
+}
+
+
+.form-button{
+    margin-top: 6rem;
+}
+
+.form-sub-button{
+    color: #97FF00;
+    font-size: 20px;
+    font-family: 'neue-m';
+    text-decoration: none;
+}
+.form-sub-button::after{
+   content: ' >';
+   font-family: 'Switzer', sans-serif;
+   font-size: 20px;
+   line-height: 0px;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 500px) { 
+
+    .contact {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .back {
+        padding: 3rem 2rem;
+    }
+
+    .inp-label {
+        color: #97FF00;
+        font-size: 16px;
+        font-family: 'neue-r';
+    }
+
+    .name-c p {
+        color: #97FF00;
+        font-size: 20px;
+        font-family: 'Switzer', sans-serif;
+    }
+
+    .form-sub-button {
+        color: #97FF00;
+        font-size: 16px;
+        font-family: 'neue-m';
+        text-decoration: none;
+    }
+
+    input {
+        color: #97FF00;
+        font-size: 16px;
+        font-family: 'neue-r';
+        border: none !important;
+        margin-left: 0.5rem;
+        background-color: transparent !important;
+        width: 100%;
+        outline: none !important;
+        caret-shape: block !important;
+    }
+
+    textarea {
+        color: #97FF00;
+        font-size: 16px;
+        font-family: 'neue-r';
+        border: none !important;
+        margin-left: 0.5rem;
+        background-color: transparent !important;
+        width: 100%;
+        outline: none !important;
+        caret-shape: block !important;
+    }
+ }

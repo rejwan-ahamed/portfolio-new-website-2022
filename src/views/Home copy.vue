@@ -1,79 +1,9 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rejwan Ahamed Portfolio</title>
-
-    <!-- bootstrap css here 👇👇👇 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <!-- font-awesome cdn here 👇👇 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- jquery here 👇 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-
-    <!-- custom css here 👇 -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mobilenav.css">
-</head>
-
-<body>
-
-    <!-- nav section start here 👇 -->
-    <section class="nav-main">
-        <div class="nav-destop" id="nav-destop">
-            <div class="destop-nav-left">
-                <img src="./images/logo.svg" alt="logo" srcset="" class="des-nav-logo">
-            </div>
-            <div class="destop-nav-right">
-                <div class="des-nav-links">
-                    <ul>
-                        <li><a href="" class="des-nav-main-links">About</a></li>
-                        <li><a href="" class="des-nav-main-links">Blogs</a></li>
-                        <li><a href="" class="des-nav-main-links">Timeline</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- nav section end here ☝ -->
-
-    <!-- mobile nav start here 👇-->
-    <section class="mobile-nav">
-        <div id="mySidenav" class="sidenav">
-            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="mobile-nav-main" id="mobile-nav">
-            <img src="./images/logo.svg" alt="logo" srcset="" class="mobile-img">
-            <i class="fa-brands fa-42-group" style="font-size:30px;cursor:pointer"></i>
-            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
-        </div>
-    </section>
-
-
-
-    <!-- mobile nav end here 👆-->
-
-
-
-    <!-- hero section start here 👇 -->
+<template>
     <section class="hero">
         <div class="hero-main">
             <div class="hero-left">
                 <div class="hero-left-main-title">
-                    <h1 class="hero-main-title">Hi! There I am rejwan,
+                    <h1 class="hero-main-title">Hi! There I am Rejwan,
                         want to see something mind-blowing.</h1>
                 </div>
                 <div class="hero-paragraph">
@@ -87,7 +17,7 @@
                     <a href="mailto: rejwanahamed85@gmail.com" class="email-link-main">
                         <div class="hero-main-button">
                             <h4>rejwanahamed85@gmail.com</h4>
-                            <img src="./images//icons/email.svg" alt="email" srcset="" class="hero-email-icon">
+                            <img src="../assets/images//icons/email.svg" alt="email" srcset="" class="hero-email-icon">
                         </div>
                     </a>
                 </div>
@@ -96,7 +26,7 @@
             <div class="hero-right">
                 <div class="hero-right-bg">
                     <div class="hero-avater">
-                        <img src="./images/avater.svg" alt="avater" srcset="">
+                        <img src="../assets/images/avater.svg" alt="avater" srcset="">
                     </div>
                 </div>
             </div>
@@ -106,7 +36,7 @@
 
 
     <!-- about section start here 👇 -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-main">
             <p>Hola, I am Rejwan Ahamed. This is my portfolio and my daily blog. I started this website to share my
                 knowledge, experience, and programming journey with all my friends on the internet. I tried to post
@@ -117,15 +47,22 @@
                 It will make me happy if any of my documentation will be helpful to you. Every day I am learning new
                 stuff and constantly trying to make some of my best projects to share my ideas with you. I will share
                 all of my project's source code on Github. you can check out my GitHub account also you can ask me any
-                questions on Vue js and Laravel between 10 am to 6 pm (GMT+6). The time in your area right now is <span
-                    id="your-clock"></span>
+                questions on Vue js and Laravel between 10 am to 6 pm (GMT+6). The time in your area right now is <span id="your-clock"></span>
                 . The time in my area right now is <span id="my-clock"></span>.
                 <br>
                 <br>
                 I have knowledge of HTML, CSS, javascript, bootstrap, GSAP, jquery, flutter, Vue js, nuxt js, PHP & SQL
                 database.
-                br
-                 I am currently learning react js, react-native, tailwind CSS, Mongo DB, and NoSQL database.
+                <br>
+                I am currently learning react js, react-native, tailwind CSS, Mongo DB, and NoSQL database.
+                <br>
+                <br>
+                Check out my <span><a href="https://metrics.lecoq.io/about/rejwan-ahamed"
+                        class="show-links">GitHub</a></span>
+                <br>
+                You can download my resume from here <span><a
+                        href="https://drive.google.com/file/d/1AIAGfjdmfKh34-nPQJn4wJc8CSSpj6u2/view?usp=sharing"
+                        class="show-links">Download</a></span>
             </p>
         </div>
     </section>
@@ -133,7 +70,7 @@
 
 
     <!-- timeline section start here 👇 -->
-    <section class="timeline">
+    <section class="timeline" id="timeline">
         <div class="timeline-main">
             <div class="timeline-title">
                 <h4>My projecs and research timeline.</h4>
@@ -209,35 +146,35 @@
             <div class="services-main">
                 <div class="service-icons">
                     <div class="service-main-icon">
-                        <img src="./images/icons/1.svg" alt="" srcset="">
+                        <img src="../assets/images/icons/1.svg" alt="" srcset="">
                         <h4>Backend <br>
                             development</h4>
                     </div>
                 </div>
                 <div class="service-icons">
                     <div class="service-main-icon">
-                        <img src="./images/icons/2.svg" alt="" srcset="">
+                        <img src="../assets/images/icons/2.svg" alt="" srcset="">
                         <h4>Single <br>
                             page app</h4>
                     </div>
                 </div>
                 <div class="service-icons">
                     <div class="service-main-icon">
-                        <img src="./images/icons/3.svg" alt="" srcset="">
+                        <img src="../assets/images/icons/3.svg" alt="" srcset="">
                         <h4>Cross <br>
                             platfrom </h4>
                     </div>
                 </div>
                 <div class="service-icons">
                     <div class="service-main-icon">
-                        <img src="./images/icons/4.svg" alt="" srcset="">
+                        <img src="../assets/images/icons/4.svg" alt="" srcset="">
                         <h4>Responsiveness <br>
                             & UI fixing</h4>
                     </div>
                 </div>
                 <div class="service-icons">
                     <div class="service-main-icon">
-                        <img src="./images/icons/5.svg" alt="" srcset="">
+                        <img src="../assets/images/icons/5.svg" alt="" srcset="">
                         <h4>CMS</h4>
                     </div>
                 </div>
@@ -248,8 +185,8 @@
 
 
     <!-- post section start here 👇 -->
-    <section class="post">
-        <div class="post-main">
+    <section class="post-home">
+        <div class="post-main-home">
             <div class="post-single">
                 <a href="#" class="post-link"><i class="fa-brands fa-42-group"></i> How to do two away binding in vue
                     js</a>
@@ -302,7 +239,7 @@
                     </div>
                     <div class="form-part-comment negative-sp">
                         <label for="name ">Message</label>
-                        <textarea name="" id="" cols="0" rows="0" type="text" name="message" id="message"
+                        <textarea cols="0" rows="0" type="text" name="message" id="message"
                             placeholder="Message"></textarea>
                         <!-- <input type="text" name="message" id="message" placeholder="Message"> -->
                     </div>
@@ -316,64 +253,24 @@
         </div>
     </section>
     <!-- contact section end here 👆 -->
+</template>
 
+<script>
+export default {
+    name: "MainHome",
+    mounted() {
+        window.scrollTo(0, 0)
+    },
+     created() {
 
+        if (screen.width <=500) {
+            // window.location = "https://rejwanahamed.xyz/mobile";
+        }
 
+    }
 
-    <!-- footer section start here 👇 -->
-    <footer>
-        <div class="footer-main">
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <img src="./images/logow.svg" alt="" srcset="" class="footer-img">
-                </div>
-                <div class="footer-top-right">
-                    <ul class="footer-nav">
-                        <li><a href="" class="footer-menue">Blogs</a></li>
-                        <li><a href="" class="footer-menue">About</a></li>
-                        <li><a href="" class="footer-menue">Timelines</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-devider"></div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    <ul>
-                        <li><a href="" class="booter-bottom-icons" class="no-p-lefr"> <i
-                                    class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="" class="booter-bottom-icons"> <i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="" class="booter-bottom-icons"><i class="fa-brands fa-linkedin-in"></i></a> </li>
-                        <li><a href="" class="booter-bottom-icons"><i class="fa-brands fa-github"></i></a> </li>
-                        <li><a href="" class="booter-bottom-icons"> <i class="fa-brands fa-behance"></i></a></li>
-                        <li><a href="" class="booter-bottom-icons"> <i class="fa-brands fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-bottom-right">
-                    <p>All rights reserved @copyright 2022</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer section end here 👆 -->
+}
+</script>
 
-
-    <!-- about section start here 👇 -->
-    <!-- about section end here 👆 -->
-
-    <!-- nav animation js here 👇-->
-    <script src="./js/nav-animation.js"></script>
-
-    <!-- time animation js here 👇-->
-    <script src="./js/time.js"></script>
-    <!-- time mobile nav js here 👇-->
-    <script src="./js/mobile-nav.js"></script>
-    <!-- user country tracking js here 👇-->
-    <script src="./js/getcountry.js"></script>
-
-    <!-- bootstrap js here 👇 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+<style>
+</style>

@@ -4,6 +4,8 @@ import Blog from '../views/Allpost.vue'
 import Post from '../views/Post.vue'
 import Mobile from '../views/Mobile.vue'
 import blog from '../views/Blogs.vue'
+import contact from '../views/Contact.vue'
+import contactm from '../views/Contactm.vue'
 
 
 const routes = [
@@ -32,6 +34,16 @@ const routes = [
     path: '/blog/',
     name: 'blog',
     component: blog
+  },
+  {
+    path: '/contact/',
+    name: 'contact',
+    component: contact
+  },
+  {
+    path: '/contactm/',
+    name: 'contactm',
+    component: contactm
   },
 
   // {

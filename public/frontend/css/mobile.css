@@ -41,7 +41,8 @@
 
 /* root styling for js */
 #t{
-    transition: .9s;
+    /* transition: .9s; */
+    transition: 1.3s;
     background-color: white;
 }
 #gitcount{
@@ -61,7 +62,7 @@ h3.project-main-title-m.blogs-m {
 
 h3.project-main-title-m.blog-t {
     color: black;
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
     font-family: 'neue-b';
     padding-bottom: 0px;
 }
@@ -74,6 +75,16 @@ h3.project-main-title-m.blog-t {
     padding: 2rem;
 }
 
+
+h3.mystyle{
+    font-family: 'neue-b' !important;
+    transition: 5s;
+}
+h3.mystyle2{
+    font-family: 'neue-l' !important;
+    transition: 5s;
+}
+
 .project-description-m.blogs-m {
     font-size: 16px;
     line-height: 22px;
@@ -84,6 +95,11 @@ h3.project-main-title-m.blog-t {
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+}
+
+span.e-icon {
+    display: flex !important;
+    align-items: center !important;
 }
 
 .project-name-m.blogs-m {
@@ -230,7 +246,7 @@ border: 1px solid black;
 
     .hero-main-m-right h1 {
         font-family: 'neue-b';
-        width: 100%;
+        width: 90%;
         font-size: 25px;
         line-height: 30px;
         padding-left: 2rem;
@@ -263,8 +279,8 @@ border: 1px solid black;
         border-radius: 43px;
         text-decoration: none;
         font-family: 'neue-m';
-        font-size: 15px;
-        font-size: 15px;
+        /* font-size: 15px; */
+        font-size: 4.3vw;
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
@@ -502,7 +518,8 @@ border: 1px solid black;
         border-radius: 43px;
         text-decoration: none;
         font-family: 'neue-m';
-        font-size: 15px;
+        font-size: 4.3vw;
+        /* font-size: 15px; */
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
@@ -514,6 +531,8 @@ border: 1px solid black;
         background-color: #97FF00;
 
     }
+
+
 
     /* about section start here */
     .about-m {
@@ -738,7 +757,8 @@ border: 1px solid black;
         border-radius: 43px;
         text-decoration: none;
         font-family: 'neue-m';
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 4.3vw;
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
