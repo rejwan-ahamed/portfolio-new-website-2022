@@ -246,7 +246,7 @@
                             <img src="../assets/images/6.jpg" alt="project 1" srcset="" class="live-img">
                             <div class="live-body-main">
                                 <div class="live-date">05.07.2022</div>
-                                <div class="live-title">Bangla NEtwork</div>
+                                <div class="live-title">Bangla Network</div>
                                 <a href="https://banglawifinetwork.web.app/" class="live-button" target="_blank">Live
                                     View</a>
                             </div>

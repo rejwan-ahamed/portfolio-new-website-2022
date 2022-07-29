@@ -361,8 +361,8 @@ border: 1px solid black;
     }
 
     .project-img-m img {
-        width: 80vw;
-        height: 12rem;
+        width: 100%;
+        height: 100%;
         border-radius: 4px 4px 0px 0px;
     }
 
@@ -602,8 +602,8 @@ border: 1px solid black;
     }
 
     .project-img-m img {
-        width: 80vw;
-        height: 14rem;
+        width: 100%;
+        height: 100%;
         border-radius: 4px 4px 0px 0px;
     }
 
@@ -841,8 +841,8 @@ border: 1px solid black;
     }
 
     .project-img-m img {
-        width: 80vw;
-        height: 16rem;
+        width: 100%;
+        height: 100%;
         border-radius: 4px 4px 0px 0px;
     }
 

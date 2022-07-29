@@ -233,15 +233,14 @@ pre.ql-syntax {
 .posts-main-thumb {
     margin-top: -16%;
     /* padding-bottom: 6rem; */
-    padding: 0 10rem;
     padding-bottom: 4rem;
 }
 
 
 .posts-main-thumb img {
-    width: 100%;
+    width: 80vw;
     /* height: 60vh; */
-    height: 100%;
+    height: 70vh;
     border-radius: 4px;
 
 }
@@ -273,22 +272,6 @@ pre.ql-syntax {
     .main-post-content {
         padding: 0rem 14rem 6rem 14rem;
     }
-
-    .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 8rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
-    }
 }
 
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -311,7 +294,7 @@ pre.ql-syntax {
         font-family: 'neue-b';
         color: black;
         font-size: 13px;
-
+        
     }
 
     .posts-title-main {
@@ -322,22 +305,6 @@ pre.ql-syntax {
         line-height: 60px;
         width: 70%;
         padding: 0.5rem 0;
-    }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 6rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
     }
 }
 
@@ -372,22 +339,6 @@ pre.ql-syntax {
         width: 70%;
         padding: 0.5rem 0;
     }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 6rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
-    }
 }
 
 @media (min-width: 1100px) and (max-width: 1299px) {
@@ -421,22 +372,6 @@ pre.ql-syntax {
         width: 70%;
         padding: 0.5rem 0;
     }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 6rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
-    }
 }
 
 @media (min-width: 1000px) and (max-width: 1099px) {
@@ -469,22 +404,6 @@ pre.ql-syntax {
         line-height: 55px;
         width: 100%;
         padding: 0.5rem 0;
-    }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 4rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
     }
 }
 
@@ -523,7 +442,7 @@ pre.ql-syntax {
 
     .posts-main-thumb {
         margin-top: -20%;
-        padding-bottom: 2rem !important;
+        padding-bottom: 3rem !important;
         padding-bottom: 1rem;
     }
 
@@ -601,22 +520,6 @@ pre.ql-syntax {
         font-family: 'neue-m' !important;
         color: #115bf8 !important;
         font-size: 18px !important;
-    }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 0rem;
-        padding-bottom: 4rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
     }
 
 
@@ -737,22 +640,6 @@ pre.ql-syntax {
         font-size: 18px !important;
     }
 
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 0rem;
-        padding-bottom: 2rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
-    }
-
 }
 
 @media (min-width: 401px) and (max-width: 500px) {
@@ -866,22 +753,6 @@ pre.ql-syntax {
         font-family: 'neue-m' !important;
         color: #115bf8 !important;
         font-size: 18px !important;
-    }
-
-        .posts-main-thumb {
-        margin-top: -16%;
-        /* padding-bottom: 6rem; */
-        padding: 0 0rem;
-        padding-bottom: 2rem;
-    }
-
-
-    .posts-main-thumb img {
-        width: 100%;
-        /* height: 60vh; */
-        height: 100%;
-        border-radius: 4px;
-
     }
 
 

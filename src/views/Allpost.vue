@@ -31,7 +31,7 @@
                     <div class="post-date">{{ item.date }}</div>
                     <div class="post-owner">{{ item.tag }}</div>
                     <div class="post-preview">
-                        <router-link class="live-view-button" :to="'/post/' + item._id">Live view</router-link>
+                        <router-link class="live-view-button" :to="'/post/' + item._id">Read More</router-link>
                     </div>
                 </div>
                 <div class="hr-bottom"></div>
